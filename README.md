@@ -31,15 +31,15 @@ This project develops an **interactive visualization platform** that analyzes **
 
 ### 🌍 Global Greenhouse Gas Emissions  
 Displays **CO<sub>2</sub>, CH<sub>4</sub>, and N<sub>2</sub>O emissions** by country over time.  
-![Emissions Dashboard](images/emissions_dashboard.png)  
+![Emissions Dashboard](Results/emissions_dashboard_page.png)  
 
 ### 💰 Carbon Tax Policy Status  
 Shows **countries with implemented carbon tax policies** and their effectiveness.  
-![Carbon Tax Dashboard](images/carbon_tax_dashboard.png)  
+![Carbon Tax Dashboard](Results/carbon_tax_dashboard_page.png)  
 
 ### 🌡️ Temperature Change Analysis  
 Illustrates **the impact of emissions on global temperature trends**.  
-![Temperature Change Dashboard](images/temperature_change_dashboard.png)  
+![Temperature Change Dashboard](Results/temperature_change_dashboard_page.png)  
 
 ## 🚀 Future Enhancements  
 - **Expand data integration** to include industrial emissions and renewable energy adoption.  
