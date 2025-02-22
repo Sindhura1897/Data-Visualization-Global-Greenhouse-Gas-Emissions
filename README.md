@@ -2,12 +2,12 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)  
 ![Plotly Dash](https://img.shields.io/badge/Plotly%20Dash-Interactive%20Visualization-orange)  
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20&%20NumPy-green)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20&%20NumPy-green)  
 ![Data Visualization](https://img.shields.io/badge/Data%20Visualization-Choropleth%20Maps-purple)  
 ![Climate Insights](https://img.shields.io/badge/Climate%20Insights-Policy%20&%20Trends-red)  
 
 ## 📌 Overview  
-This project develops an **interactive visualization platform** that analyzes **global greenhouse gas emissions**. The dashboard integrates **CO2, methane (CH4), and nitrous oxide (N2O) emissions**, **carbon tax policies**, and **temperature changes** to uncover insights into **climate change trends and policy effectiveness**.  
+This project develops an **interactive visualization platform** that analyzes **global greenhouse gas emissions**. The dashboard integrates **CO<sub>2</sub>, methane (CH<sub>4</sub>), and nitrous oxide (N<sub>2</sub>O) emissions**, **carbon tax policies**, and **temperature changes** to uncover insights into **climate change trends and policy effectiveness**.  
 
 ## 🛠 Tools & Technologies  
 - **Plotly Dash** – Interactive web-based visualizations  
@@ -23,14 +23,14 @@ This project develops an **interactive visualization platform** that analyzes **
 4. **User Interactivity** – Implemented **sliders, dropdowns, and hover tooltips** for exploration.  
 
 ## 📊 Results  
-- **Identified emission trends** across CO2, CH4, and N2O gases.  
+- **Identified emission trends** across CO<sub>2</sub>, CH<sub>4</sub>, and N<sub>2</sub>O gases.  
 - **Mapped carbon tax policies** showing their effect on emission reductions.  
 - **Analyzed temperature changes** in response to greenhouse gas emissions.  
 
 ## 📸 Visuals  
 
 ### 🌍 Global Greenhouse Gas Emissions  
-Displays **CO2, CH4, and N2O emissions** by country over time.  
+Displays **CO<sub>2</sub>, CH<sub>4</sub>, and N<sub>2</sub>O emissions** by country over time.  
 ![Emissions Dashboard](images/emissions_dashboard.png)  
 
 ### 💰 Carbon Tax Policy Status  
@@ -45,5 +45,3 @@ Illustrates **the impact of emissions on global temperature trends**.
 - **Expand data integration** to include industrial emissions and renewable energy adoption.  
 - **Enhance interactivity** with deeper drill-downs and scenario modeling.  
 - **Add predictive analytics** to forecast emissions trends and policy impacts.  
-
-🔗 **GitHub Repository**: [Project Link](https://github.com/YOUR_USERNAME/YOUR_REPO)  
