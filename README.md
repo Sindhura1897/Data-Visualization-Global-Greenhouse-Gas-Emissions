@@ -15,7 +15,7 @@ This project provides **an in-depth analysis of global greenhouse gas (GHG) emis
 - **📊 Visualization Dashboard** (Plotly Dash) → Interactive maps & trends for CO₂, CH₄, N₂O emissions, carbon tax policies, and temperature variations.  
 - **🔍 Data Analysis & Prediction** (BigQuery, Looker Studio, Machine Learning) → Querying emissions data, generating insights, and forecasting per capita emissions.  
 
-🔹 **[📂 Visualization Dashboard (Plotly Dash)](Visualization-Dashboard/README.md)**  
+🔹 **[📂 Visualization Dashboard (Plotly Dash)](Visualization_Dashboard/README.md)**  
 🔹 **[📂 Machine Learning & Cloud Analytics (BigQuery & GCP)](ML-Prediction/README.md)**  
 
 ---
@@ -72,15 +72,15 @@ This project provides **an in-depth analysis of global greenhouse gas (GHG) emis
 
 ### 🌍 Global Greenhouse Gas Emissions  
 Displays **CO<sub>2</sub>, CH<sub>4</sub>, and N<sub>2</sub>O emissions** by country over time.  
-![Emissions Dashboard](Visualization-Dashboard/Results/emissions_dashboard_page.png)  
+![Emissions Dashboard](Visualization_Dashboard/Results/emissions_dashboard_page.png)  
 
 ### 💰 Carbon Tax Policy Status  
 Shows **countries with implemented carbon tax policies** and their effectiveness.  
-![Carbon Tax Dashboard](Visualization-Dashboard/Results/carbon_tax_dashboard_page.png)  
+![Carbon Tax Dashboard](Visualization_Dashboard/Results/carbon_tax_dashboard_page.png)  
 
 ### 🌡️ Temperature Change Analysis  
 Illustrates **the impact of emissions on global temperature trends**.  
-![Temperature Change Dashboard](Visualization-Dashboard/Results/temperature_change_dashboard_page.png)  
+![Temperature Change Dashboard](Visualization_Dashboard/Results/temperature_change_dashboard_page.png)  
 
 ### 🔍 BigQuery & Looker Studio Insights  
 **Top 10 Countries by Per Capita GHG Emissions**  
