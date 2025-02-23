@@ -1,19 +1,19 @@
 # 🌍 Global Greenhouse Gas Emissions: Visualization & Prediction  
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)  
-![Plotly Dash](https://img.shields.io/badge/Plotly%20Dash-Visualization-orange) 
+![Plotly Dash](https://img.shields.io/badge/Plotly%20Dash-Visualization-orange)  
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20&%20NumPy-green)  
-![Data Visualization](https://img.shields.io/badge/Data%20Visualization-Choropleth%20Maps-purple)  
-![Climate Insights](https://img.shields.io/badge/Climate%20Insights-Policy%20&%20Trends-red)  
 ![BigQuery](https://img.shields.io/badge/BigQuery-Cloud%20Database-blue)  
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Data%20Processing-green)  
 ![Looker Studio](https://img.shields.io/badge/Looker%20Studio-Reporting-purple)  
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Prediction-red)  
+![GCP Hosting](https://img.shields.io/badge/GCP%20Hosting-Static%20Website-orange)  
 
 ## 📌 Project Overview  
-This project provides **an in-depth analysis of global greenhouse gas (GHG) emissions** across 200+ countries using:  
-- **📊 Visualization Dashboard** (Plotly Dash) → Interactive maps & trends for CO₂, CH₄, N₂O emissions, carbon tax policies, and temperature variations.  
-- **🔍 Data Analysis & Prediction** (BigQuery, Looker Studio, Machine Learning) → Querying emissions data, generating insights, and forecasting per capita emissions.  
+This project provides **a dual analysis of greenhouse gas (GHG) emissions** using:  
+- **📊 Visualization Dashboard** (**Plotly Dash**) → **Total GHG emissions** (**CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O**) across countries, carbon tax policies, and temperature changes.  
+- **🔍 Data Analysis & Prediction** (**BigQuery, Looker Studio, Machine Learning**) → **Per capita GHG emissions**, querying trends, and predicting future emissions.  
+- **🌎 Static Website Deployment** (**Google Cloud Storage**) → A **Choropleth Map** visualizing **per capita GHG emissions across the globe**, allowing users to interact with **yearly data through a slider**.  
 
 🔹 **[📂 Visualization Dashboard (Plotly Dash)](Visualization_Dashboard/README.md)**  
 🔹 **[📂 Machine Learning & Cloud Analytics (BigQuery & GCP)](ML-Prediction/README.md)**  
@@ -21,50 +21,78 @@ This project provides **an in-depth analysis of global greenhouse gas (GHG) emis
 ---
 
 ## 🛠 Tools & Technologies  
-- **Python, Pandas, NumPy** → Data processing & transformation  
-- **Plotly Dash** → Interactive visualization & Choropleth maps  
-- **Google Cloud Platform (GCP)** → Data storage & scalable processing  
-- **BigQuery** → Large-scale SQL querying & analytics  
+- **Python, Pandas, NumPy** → Data wrangling & transformations  
+- **Plotly Dash** → Interactive dashboards & Choropleth maps  
+- **Google Cloud Platform (GCP)** → Cloud data storage, static website hosting  
+- **BigQuery** → Large-scale SQL querying & analysis  
 - **Looker Studio** → Data visualization & reporting  
 - **Machine Learning** → Linear Regression, Gradient Boosting Regressor  
+- **GCP Static Hosting** → Hosting the per capita emissions **Choropleth Map**  
 
 ---
 
 ## 📂 Project Structure  
 
+
 ---
 
 ## 🔍 Approach  
 
-### **🌍 1. Data Processing & Storage**  
-- **Visualization Data (Plotly Dash)** → **Locally stored dataset** processed using **Pandas**.  
-- **Prediction Data (BigQuery & ML)** → Data **stored in GCP buckets** and queried using **BigQuery SQL**.  
-- **Feature Engineering** → Extracted emissions trends, population, GDP, and energy use.  
+### **🌍 1. Visualization Component (Plotly Dash)**
+#### **Data Preprocessing**
+- **Merged datasets** for **CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O emissions, carbon tax policies, and temperature changes**.  
+- **Converted data into tidy & hybrid formats** for visualization.  
+- **Cleaned missing values** using forward fill and mean imputation.  
 
-### **📊 2. Visualization Component (Plotly Dash)**  
-- Developed **Choropleth maps & time-series graphs** to track emissions trends globally.  
-- Added **dynamic sliders & dropdowns** to analyze CO₂, CH₄, and N₂O variations across years.  
-- Mapped **carbon tax policy implementation** to assess regional impact.  
+#### **App Layout**
+📌 **Side Menu (User Controls)**  
+- **Category Selection:** (Emissions, Carbon Tax, Temperature)  
+- **Gas Type Filter:** (CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O)  
+- **Projection Type:** (Robinson, Mollweide)  
+- **Year Slider:** Interactive filter for temporal analysis  
 
-### **📊 3. BigQuery & Looker Studio Analysis**  
-- Queried **emissions trends, population growth, and policy impact** using **BigQuery SQL**.  
-- Used **Looker Studio** to generate **interactive reports** and **country-wise comparisons**.  
-- Key insights extracted:  
-  - **Top 10 countries** with the highest per capita GHG emissions.  
-  - **Historical emissions trends (1981-2023)** across all regions.  
-  - **Correlation between GDP, energy use, and emissions**.  
+📌 **Main Visualization Area**  
+- **Choropleth Map:** Displays global emissions with dynamic tooltips  
+- **Hover Interaction:** Displays country-specific emission values  
 
-### **🔢 4. Predictive Modeling (Machine Learning)**  
-- Built **Linear Regression & Gradient Boosting models** to forecast future per capita emissions.  
-- Achieved **96% prediction accuracy** using **feature engineering & data transformations**.  
-- Evaluated models using **R² and Mean Squared Error (MSE)** to optimize performance.  
+#### **Callbacks & Interactivity**  
+📌 **Update Figure Function** → Dynamically updates the Choropleth map based on filters.  
+📌 **Toggle Emissions Options** → Adjusts UI controls based on selection.  
+📌 **Collapsible Menu Toggle** → Handles sidebar interactions.  
+
+#### **Deployment**  
+- **Local:** Run `app.py`.   
 
 ---
 
+### **2️⃣ Per Capita GHG Emissions Analysis (BigQuery, ML & GCP Deployment)**  
+This section includes **data extraction, analysis, predictions, and visualization** of **per capita greenhouse gas (GHG) emissions**.  
+
+#### **2.1 BigQuery & Looker Studio Analysis**  
+- **Stored per capita emissions data in GCP buckets** and queried using **BigQuery SQL**.  
+- **Generated insights in Looker Studio dashboards**.  
+- **Extracted key trends:**  
+  - **Top 10 emitters per capita**.  
+  - **GHG emissions trends from 1981-2023**.  
+  - **Correlation between GDP, energy use, and emissions**.  
+
+#### **2.2 Machine Learning Predictions**  
+- **Trained Linear Regression & Gradient Boosting models** to predict per capita emissions.  
+- **Achieved 96% accuracy** using feature engineering & data transformations.  
+- **Evaluated models with R² and Mean Squared Error (MSE)**.  
+
+#### **2.3 Static Website Deployment (Google Cloud)**  
+- **Built a Choropleth Map** for **per capita GHG emissions**.  
+- **Added an interactive year slider** for time-based analysis.  
+- **Hosted as a static website on GCP** for global accessibility.  
+ 
+---
+
 ## 📊 Results  
-- **Identified key emission trends & country-wise variations** using Looker Studio.  
-- **Mapped carbon tax policies** to study their effect on emissions reduction.  
-- **Predicted per capita emissions** using ML models with high accuracy.  
+- **Visualized global GHG emission trends** over time.  
+- **Mapped the impact of carbon tax policies**.  
+- **Predicted per capita GHG emissions with ML models**.  
+- **Deployed a static Choropleth Map for global accessibility**.  
 
 ---
 
@@ -82,13 +110,10 @@ Shows **countries with implemented carbon tax policies** and their effectiveness
 Illustrates **the impact of emissions on global temperature trends**.  
 ![Temperature Change Dashboard](Visualization_Dashboard/Results/temperature_change_dashboard_page.png)  
 
-### 🔍 BigQuery & Looker Studio Insights  
-**Top 10 Countries by Per Capita GHG Emissions**  
-![BigQuery Insights](ml_prediction/images/bigquery_top10.png)  
+### 🌎 **GCP Hosted Choropleth Map**  
+![Static Website Preview](Static_Website/images/choropleth_map.png)  
 
-### 🔢 Predictive Modeling Results  
-Comparing **Linear Regression & Gradient Boosting** performance.  
-![ML Model Results](ml_prediction/images/ml_results.png)  
+---
 
 ---
 
