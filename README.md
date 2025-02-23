@@ -111,7 +111,7 @@ Illustrates **the impact of emissions on global temperature trends**.
 ![Temperature Change Dashboard](Visualization_Dashboard/Results/temperature_change_dashboard_page.png)  
 
 ### 🌎 **GCP Hosted Choropleth Map**  
-![Static Website Preview](Static_Website/images/choropleth_map.png)  
+![Static Website Preview](ML-Prediction/ghg_emissions_map.png)  
 
 ---
 
