@@ -68,7 +68,7 @@ This section includes **data extraction, analysis, predictions, and visualizatio
 ## 📸 Visuals  
 
 ### 🌎 **GCP Hosted Choropleth Map**  
-![Static Website Preview](ML-Prediction/ghg_emissions_map.png)  
+![Static Website Preview](ghg_emissions_map.png)  
 
 ---
 
