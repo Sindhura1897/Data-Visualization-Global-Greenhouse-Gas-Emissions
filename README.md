@@ -36,55 +36,35 @@ This project provides **a dual analysis of greenhouse gas (GHG) emissions** usin
 
 ---
 
+---
+
 ## 🔍 Approach  
 
 ### **🌍 1. Visualization Component (Plotly Dash)**
-#### **Data Preprocessing**
-- **Merged datasets** for **CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O emissions, carbon tax policies, and temperature changes**.  
-- **Converted data into tidy & hybrid formats** for visualization.  
-- **Cleaned missing values** using forward fill and mean imputation.  
-
-#### **App Layout**
-📌 **Side Menu (User Controls)**  
-- **Category Selection:** (Emissions, Carbon Tax, Temperature)  
-- **Gas Type Filter:** (CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O)  
-- **Projection Type:** (Robinson, Mollweide)  
-- **Year Slider:** Interactive filter for temporal analysis  
-
-📌 **Main Visualization Area**  
-- **Choropleth Map:** Displays global emissions with dynamic tooltips  
-- **Hover Interaction:** Displays country-specific emission values  
-
-#### **Callbacks & Interactivity**  
-📌 **Update Figure Function** → Dynamically updates the Choropleth map based on filters.  
-📌 **Toggle Emissions Options** → Adjusts UI controls based on selection.  
-📌 **Collapsible Menu Toggle** → Handles sidebar interactions.  
-
-#### **Deployment**  
-- **Local:** Run `app.py`.   
+- **Preprocessed emissions data** (**CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>O**), carbon tax policies, and temperature trends.  
+- **Designed an interactive dashboard** with:  
+  - **Side Menu**: Category selection, gas filters, projection type, year slider.  
+  - **Main Area**: Choropleth map with tooltips, hover interaction.  
+- **Implemented callbacks** for real-time updates & dynamic UI controls.  
+- **Deployment**: Run locally via `app.py`.  
 
 ---
 
 ### **2️⃣ Per Capita GHG Emissions Analysis (BigQuery, ML & GCP Deployment)**  
-This section includes **data extraction, analysis, predictions, and visualization** of **per capita greenhouse gas (GHG) emissions**.  
-
 #### **2.1 BigQuery & Looker Studio Analysis**  
-- **Stored per capita emissions data in GCP buckets** and queried using **BigQuery SQL**.  
-- **Generated insights in Looker Studio dashboards**.  
-- **Extracted key trends:**  
+- **Queried per capita emissions from GCP buckets** using **BigQuery SQL**.  
+- **Generated insights in Looker Studio**, identifying:  
   - **Top 10 emitters per capita**.  
-  - **GHG emissions trends from 1981-2023**.  
-  - **Correlation between GDP, energy use, and emissions**.  
+  - **Historical trends (1981-2023)**.  
+  - **Impact of GDP & energy use on emissions**.  
 
 #### **2.2 Machine Learning Predictions**  
-- **Trained Linear Regression & Gradient Boosting models** to predict per capita emissions.  
-- **Achieved 96% accuracy** using feature engineering & data transformations.  
-- **Evaluated models with R² and Mean Squared Error (MSE)**.  
+- **Trained Linear Regression & Gradient Boosting models**, achieving **96% accuracy**.  
+- **Evaluated models using R² and Mean Squared Error (MSE)**.  
 
 #### **2.3 Static Website Deployment (Google Cloud)**  
-- **Built a Choropleth Map** for **per capita GHG emissions**.  
-- **Added an interactive year slider** for time-based analysis.  
-- **Hosted as a static website on GCP** for global accessibility.  
+- **Built & hosted a Choropleth Map** for **per capita emissions with an interactive year slider**.  
+- **Deployed as a static website on GCP**.   
  
 ---
 
